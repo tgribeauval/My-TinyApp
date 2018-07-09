@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <% include ./partials/_head %>
+  <body>
+
+    <% include ./partials/_header %>
+
+    <h2>The full URL and its short form:</h2>
+    <div class="loneText">
+      <a href = '<%= longURL[shortURL] %>'><%= longURL[shortURL] %></a> &rarr; <a href = '<%= longURL[shortURL] %>'>http://localhost:8080/u/<%= shortURL %></a>
+    </div>
+    </br></br>
+    <form method="POST" action="/<%= shortURL%>/update">
+      <label>Made a mistake? Update your URL:</label>
+      </br>
+      <input type="text" name="updatedLongURL" placeholder="http://">
+      <input class="button" type="submit" value="Update">
+    </form>
+
+    </br></br></br>
+    <div class="loneText"><a href="http://localhost:8080/urls/new">Shorten a URL here!</a></div>
+    <p><a href="http://localhost:8080/urls"><div class="loneText">View all your shortened links here!</div></a></p>
+  </body>
+</html>

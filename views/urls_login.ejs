@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <% include ./partials/_head %>
+  <body>
+    <header>
+      <div id="header"><a href="http://localhost:8080/">My URL Shortener</a></div>
+      <br><br>
+      Need an account?
+      <form method="POST" action="/register">
+      Click here to <a href="http://localhost:8080/register">register</a>!
+      </form>
+    </header>
+    <br><br>
+    <form method="POST" action="/login">
+    <h1>Log In<h1>
+      <h4>Email:<h4>
+      <input type="email" name="email" placeholder="Enter your email"><br>
+      <h4>Password:<h4>
+      <input type="password" name="password" placeholder="Enter your password"><br><br>
+      <input class="button" type="submit" value="Log In">
+
+
+  </body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <% include ./partials/_head %>
+  <body>
+
+  <% include ./partials/_header %>
+    <!-- <h2 id="homeText">If you are looking to shorten that inconveniently long URL,<br>you've come to the right place!<br><br></h2> -->
+
+    <% if (locals.info) { %>
+      <div class="loneText">View your index of <a href="/urls">shortened URLS!</a>.</div><br><br>
+    <% } else { %>
+      <h3>Or...</h3>
+    <% } %>
+
+    </br>
+    <a href="/urls/new"><div class="loneText">Shorten a URL here!</div></a>
+
+  </body>
+
+</html>
