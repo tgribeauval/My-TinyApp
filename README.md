@@ -13,9 +13,9 @@ I got introduced to some more advanced JavaScript and node concepts and also lea
 
 dependencies:
 
-  bcryptjs: ^2.4.3
-  body-parser: ^1.18.3
-  cookie-parser: ^1.4.3
-  cookie-session: ^2.0.0-beta.3
-  ejs: ^2.6.1
-  express: ^4.16.3
+  bcryptjs
+  body-parser
+  cookie-parser
+  cookie-session
+  ejs
+  express
