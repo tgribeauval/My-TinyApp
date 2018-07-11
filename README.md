@@ -11,11 +11,20 @@ I've built the HTTP Server to handle requests from the browser (client).
 I got introduced to some more advanced JavaScript and node concepts and also learn more about Express, a mini web framework.
 
 
-dependencies:
+
+
+
+Dependencies:
+
 
   bcryptjs
+
   body-parser
+
   cookie-parser
+
   cookie-session
+
   ejs
+
   express
