@@ -1,3 +1,6 @@
+
+// requiring our dependencies
+
 const express = require("express");
 const app = express();
 const PORT = process.env.PORT || 8080; // default port 8080
@@ -15,7 +18,8 @@ app.set("view engine", "ejs");
 
 // Chooses a random alphanumeric character between '0' (ascii 48)
 // and 'z' (ascii 122) while omitted special character in between.
-// Not the most efficient code but I wanted to try this method.
+// thank you stack over flow <3
+
 function generateRandomString() {
   let uniqueID = "";
   const minASCII = 48;
@@ -56,10 +60,9 @@ const urlDatabase = {
 
 // home page
 app.get("/", (req, res) => {
-  pageVisits += 1
   let login = { username: req.session.username,
                 info: users[req.session.user_id],
-                pageVisits: pageVisits};
+              };
   res.render("urls_home", login);
 });
 

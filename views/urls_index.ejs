@@ -1,3 +1,8 @@
+<!-- include ./partials/_head and ./partials/_header -->
+<!-- line 15-20 creates a table with three header cells -->
+<!-- line 21 loops through short urls from /urls--->
+<!-- line 22-32 creates three data cells, line 23: long url, line 24: short url linking to website, line 25-31:Update and Delete buttonw --->
+
 <!DOCTYPE html>
   <html lang="en">
   <% include ./partials/_head %>
@@ -16,7 +21,7 @@
       <% for (let randCode in urls) { %>
       <tr>
         <td><%= urls[randCode] %></td>
-        <td><a href='<%= urls[randCode] %>'>http://localhost:8080/u/<%= randCode %></a></td>
+        <td><a href='<%= urls[randCode] %>'><%= randCode %></a></td>
         <td><form action="/urls/<%= randCode %>">
               <input class="button" type="submit" value="Update">
             </form>

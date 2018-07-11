@@ -1,8 +1,12 @@
+
+<!-- If can't recognonize the user, link to /register and /login-->
+<!-- Else show email and /logout form-->
+
 <header>
   <div id="header"><a href="http://localhost:8080/">My URL Shortener</a></div>
   <br><br>
   <% if (info === undefined) { %>
-    Hi there, new user!<br>Click to <a href="http://localhost:8080/register">register</a>!<br>
+    Hi there!<br>Click to <a href="http://localhost:8080/register">register</a>!<br>
       Click to <a href="http://localhost:8080/login">log in</a>!
     <% } else { %>
       Hi there, <%= info.email %>!

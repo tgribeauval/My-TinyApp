@@ -1,10 +1,13 @@
+<!-- Including _head.ejs and _header.ejs-->
+<!-- IF user is recognonized run line 13, links to /urls-->
+<!-- ELSE run line 16 and 20, links to /urls/new-->
+
 <!DOCTYPE html>
   <html lang="en">
   <% include ./partials/_head %>
   <body>
 
   <% include ./partials/_header %>
-    <!-- <h2 id="homeText">If you are looking to shorten that inconveniently long URL,<br>you've come to the right place!<br><br></h2> -->
 
     <% if (locals.info) { %>
       <div class="loneText">View your index of <a href="/urls">shortened URLS!</a>.</div><br><br>
